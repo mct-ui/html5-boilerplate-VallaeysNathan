@@ -192,6 +192,7 @@ html {
   line-height: 1.5;
   font-family: $font-family-primary;
   color: $color-text-light;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -199,6 +200,8 @@ html {
 */
 
 ::selection {
+  background-color: $color-primary-light;
+  color: $color-text;
 }
 
 /*
@@ -208,17 +211,33 @@ html {
 */
 
 h1 {
+  font-size: $ms5;
+  font-weight: 700;
+  line-height: calc($baseline *4);
+  margin-bottom: $space-m;
 }
 
 h2 {
+  font-size: $ms3;
+  font-weight: 700;
+  line-height: calc($baseline *3);
+  margin-bottom: $space-m;
 }
 
 h3 {
+  font-size: $ms1;
+  font-weight: 700;
+  line-height: calc($baseline *3);
+  margin-bottom: $space-m;
 }
 
 h4,
 h5,
 h6 {
+  font-size: $ms0;
+  font-weight: 700;
+  line-height: calc($baseline *3);
+  margin-bottom: $space-m;
 }
 
 p,
@@ -228,23 +247,37 @@ dl,
 table,
 address,
 figure {
+  margin-bottom: $space-m;
 }
 
 ul,
 ol {
+  list-style-position: inside;
 }
 
 li ul,
 li ol {
+  margin-bottom: 0;
 }
 
 blockquote {
+  font-family: $font-family-secondary;
+  font-size: $ms3;
+  line-height: calc($baseline * 3);
+  font-style: italic;
 }
 
 figcaption {
-}
+  font-size: $ms-1;
+  line-height: calc($baseline *2);
+  margin-top:$space-xs ;
+  color: $color-text-light;
+} 
 
 hr {
+  margin-bottom: $space-m;
+  height: 1px;
+  background-color: $color-border;
 }
 
 a {
