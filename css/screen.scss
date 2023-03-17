@@ -281,15 +281,20 @@ hr {
 }
 
 a {
+  color: $color-primary;
+  transition: .1s ease;
 }
 
 a:hover {
+  color: $color-primary-light;
 }
 
 a:visited {
+  color: $color-primary;
 }
 
 a:active {
+  color: $color-primary-dark;
 }
 
 /*---------------------------------------/*
