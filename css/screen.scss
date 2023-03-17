@@ -188,6 +188,10 @@ img {
 */
 
 html {
+  font-size: calc($root-font-size / 16 *100%);
+  line-height: 1.5;
+  font-family: $font-family-primary;
+  color: $color-text-light;
 }
 
 /*
